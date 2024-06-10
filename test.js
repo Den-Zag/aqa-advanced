@@ -30,3 +30,23 @@
 // console.log(divideTwoNumbers(6, 2))
 // console.log(divideTwoNumbers(6, 0))
 // ---
+
+
+class Book {
+  constructor(name, author, year){
+    this._name = name
+    this._author = author
+    this._year = year
+  }
+
+  get name(){return this._name}
+  set name(name){ this._name = name}
+
+}
+
+const book = new Book('test1', 'test2', 1234)
+book.name = 'wwwww'
+console.log(book.name)
+
+
+
