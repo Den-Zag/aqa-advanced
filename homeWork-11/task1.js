@@ -6,13 +6,14 @@
 // }
 // console.log(planets)
 
-let promisesArray = []
-for (let i = 1; i < 11; i++){
-  promisesArray.push(fetch(`https://swapi.dev/api/planets/${i}`)
-  .then((response) => response.json())
-  .then((json) => json.name)
-  )
+let promisesArray = [];
+for (let i = 1; i < 11; i++) {
+	promisesArray.push(
+		fetch(`https://swapi.dev/api/planets/${i}`)
+			.then((response) => response.json())
+			.then((json) => json.name),
+	);
 }
 
-const planetsName = await Promise.all(promisesArray)
-console.log(planetsName)
+const planetsName = await Promise.all(promisesArray);
+console.log(planetsName);
