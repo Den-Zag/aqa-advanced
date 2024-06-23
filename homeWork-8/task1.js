@@ -13,7 +13,7 @@ function numberCalculation(array) {
 			zeroCount.push(array[i]);
 		}
 	}
-	console.log(`Кількість позитивних чисел: ${positiveCount.length}");
+	console.log(`Кількість позитивних чисел: ${positiveCount.length}`);
 	console.log(`Кількість негативних чисел: ${negativeCount.length}`);
 	console.log(`Кількість нульових чисел: ${zeroCount.length}`);
 }
